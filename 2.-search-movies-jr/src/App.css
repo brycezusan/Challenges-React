@@ -1,0 +1,65 @@
+.container {
+  max-width: 1280px;
+  margin-inline: auto;
+  padding-block: 2rem;
+}
+
+.title{
+  font-size: 2rem; 
+  margin-block: 1.5rem;
+}
+.flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.center{
+  text-align: center;
+}
+
+.bold{
+  font-weight: 900;
+  color: rgb(16, 119, 209);
+}
+
+
+.border{
+  border:1px solid red
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fill  ,minmax(350px , 1fr));
+  gap: 1rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.card{
+  overflow: hidden;
+  width: calc(100% - 12.5%);
+}
+.movie-img{
+  width: 100%;
+  max-width: 280px;
+  height: 400px;
+  object-fit: cover;
+}
+
+.movie-title{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.error{
+  font-weight: 500;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: red;
+}
