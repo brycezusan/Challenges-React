@@ -24,9 +24,12 @@
 
 - Hooks
   - useState , useEffect , useId , useMemo
-  - useContext , custom hooks
+  - useContext , custom hooks , useDebounce
 
 - Estilos : Tailwind , React Icons , HyperUI
 
 - Fetch data : Axios , Promises , Async Await
 -  [API](https://fakestoreapi.com/docs)
+
+- filtro por titulo
+- filtro por categorias

@@ -4,19 +4,24 @@ import { LoginPage as Login } from "../pages/login";
 import { OrderPage as Order } from "../pages/order";
 import { NotFoundPage as NotFound } from "../pages/not-found";
 import { AccountPage as Account } from "../pages/account";
-import { CategoriesPage  as Categories , loader as categoriesLoader} from "../pages/categories";
-import {CartPage as Cart} from "../pages/cart";
+import {
+  CategoriesPage as Categories,
+  loader as categoriesLoader,
+} from "../pages/categories";
+import { CartPage as Cart } from "../pages/cart";
 import { Layout } from "../layouts/Layout";
-import { ProductDetailPage as ProductDetail  , loader as productDetailLoader} from "../pages/product-detail";
+import {
+  ProductDetailPage as ProductDetail,
+  loader as productDetailLoader,
+} from "../pages/product-detail";
 
 export const router = createBrowserRouter([
-
   {
     path: "/",
     element: <Layout />,
     children: [
       {
-        index:true,
+        index: true,
         element: <Home />,
       },
       {
@@ -38,12 +43,13 @@ export const router = createBrowserRouter([
       {
         path: "/categories/:categoryName",
         element: <Categories />,
-        loader: categoriesLoader
-      },{
+        loader: categoriesLoader,
+      },
+      {
         path: "/product/:id",
         element: <ProductDetail />,
-        loader: productDetailLoader
-      }
+        loader: productDetailLoader,
+      },
     ],
   },
 
